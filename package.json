@@ -1,0 +1,44 @@
+{
+  "name": "cli-steps",
+  "version": "1.0.0",
+  "description": "Add spinners to show process in the terminal",
+  "author": "Atul Mahankal <atulmahankal@gmail.com>",
+	"license": "MIT",
+  "main": "steps.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+	"files": [
+		"steps.js",
+		"steps.d.ts",
+		"spinners.json"
+	],
+  "exports": {
+    ".": {
+      "require": {
+        "types": "./steps.d.ts",
+        "default": "./steps.js"
+      },
+      "default": "./steps.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mahankals/cli-steps"
+  },
+  "engines": {
+    "node": ">= 0.10"
+  },
+	"keywords": [
+		"cli",
+		"terminal",
+    "command",
+		"console",
+		"spinner",
+		"spinners",
+		"loading",
+		"indicator",
+		"progress",
+    "bar"
+	]
+}
